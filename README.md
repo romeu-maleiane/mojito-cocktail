@@ -17,6 +17,7 @@
 
 - [Next.js](https://nextjs.org)
 - [React](https://react.dev)
+- [Gsap](https://gsap.com)
 - [Typescript](https://www.typescriptlang.org)
 - [TailwindCSS](https://tailwindcss.com) *(if applicable)*
 - [Vercel](https://vercel.com) for deployment
@@ -27,14 +28,14 @@
    ```bash
    npm install
    # or
-yarn install
+   yarn install
    ```
 
 2. Start the development server:
    ```bash
    npm run dev
    # or
-yarn dev
+   yarn dev
    ```
 
 3. Open [http://localhost:3000](http://localhost:3000) in your browser.
@@ -42,10 +43,6 @@ yarn dev
 ## Deployment
 
 Deployment can be easily done via [Vercel](https://vercel.com), taking advantage of native integration with Next.js projects.
-
-## Screenshots
-
-*(Add images of your application here to enhance your portfolio)*
 
 ## Author
 
