@@ -45,7 +45,7 @@ function Hero() {
             .to(".right-leaf", { y: 180, immediateRender: false }, 0)
             .to(".left-leaf", { y: -200, immediateRender: false }, 0)
 
-        const startValue = isMobile ? 'top 50%' : 'center 40%'
+        const startValue = isMobile ? 'top 50%' : 'center 38%'
         const endValue = isMobile ? '120% top' : 'bottom top'
 
         const tl = gsap.timeline({
@@ -55,14 +55,15 @@ function Hero() {
                 end: endValue,
                 scrub: true,
                 pin: true,
-                markers: true
             }
         })
 
-        videoRef.current.onloadedmetadata = () => {
-            tl.to(videoRef.current, {
-                currentTime: videoRef.current?.duration
-            })
+        if (videoRef.current) {
+            videoRef.current.onloadedmetadata = () => {
+                tl.to(videoRef.current, {
+                    currentTime: videoRef.current?.duration
+                })
+            }
         }
     }, [])
 
