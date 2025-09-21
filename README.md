@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mojito Cocktail
 
-## Getting Started
+> Project developed with [Next.js](https://nextjs.org) as part of my portfolio.
 
-First, run the development server:
+## About the Project
 
-```bash
-npm run dev
-# or
+**Mojito Cocktail** is a modern web application built to showcase skills in React and Next.js development. The goal is to provide a fast, intuitive interface for exploring cocktail recipes, especially the classic Mojito, and to serve as an example of best practices in front-end applications.
+
+## Features
+
+- 🔎 Search for cocktail recipes
+- 📋 Detailed view of each recipe
+- 💬 Responsive and friendly interface
+- 🚀 Optimized performance with Next.js
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org)
+- [React](https://react.dev)
+- [Typescript](https://www.typescriptlang.org)
+- [TailwindCSS](https://tailwindcss.com) *(if applicable)*
+- [Vercel](https://vercel.com) for deployment
+
+## Running Locally
+
+1. Install dependencies:
+   ```bash
+   npm install
+   # or
+yarn install
+   ```
+
+2. Start the development server:
+   ```bash
+   npm run dev
+   # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Deployment can be easily done via [Vercel](https://vercel.com), taking advantage of native integration with Next.js projects.
 
-## Learn More
+## Screenshots
 
-To learn more about Next.js, take a look at the following resources:
+*(Add images of your application here to enhance your portfolio)*
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Made with ❤️ by [Romeu Maleiane](https://github.com/romeu-maleiane)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*This project is part of my personal portfolio. Feel free to contact me or visit my profile for more projects!*
