@@ -4,6 +4,9 @@ import React from 'react'
 import { navLinks } from '../../contants'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { SplitText, ScrollTrigger } from 'gsap/all'
+
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 
 function NavBar() {
