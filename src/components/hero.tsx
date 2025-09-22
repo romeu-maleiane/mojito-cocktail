@@ -15,6 +15,7 @@ function Hero() {
     useGSAP(() => {
         const heroSplit = new SplitText('.title', { type: 'chars, words' })
         const paragraphSplit = new SplitText('.subtitle', { type: 'lines' })
+        const video = videoRef.current
 
         heroSplit.chars.forEach(char => char.classList.add('text-gradient'))
 
@@ -42,10 +43,10 @@ function Hero() {
                 scrub: true,
             },
         })
-            .to(".right-leaf", { y: 180, immediateRender: false }, 0)
-            .to(".left-leaf", { y: -200, immediateRender: false }, 0)
+            .to(".right-leaf", { y: 180, }, 0)
+            .to(".left-leaf", { y: -200, }, 0)
 
-        const startValue = isMobile ? 'top 50%' : 'center 38%'
+        const startValue = isMobile ? 'top 50%' : 'center 38.5%'
         const endValue = isMobile ? '120% top' : 'bottom top'
 
         const tl = gsap.timeline({
@@ -58,13 +59,12 @@ function Hero() {
             }
         })
 
-        if (videoRef.current) {
-            videoRef.current.onloadedmetadata = () => {
-                tl.to(videoRef.current, {
-                    currentTime: videoRef.current?.duration
-                })
-            }
-        }
+        if(video)
+            video.onloadedmetadata = () => {
+                tl.to('video', {
+                    currentTime: video?.duration,
+                });
+            };
     }, [])
 
     return (

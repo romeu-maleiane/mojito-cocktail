@@ -9,10 +9,10 @@ function Cocktails() {
     useGSAP(() => {
         gsap.timeline({
             scrollTrigger: {
-                trigger: 'cocktails',
+                trigger: '#cocktails',
                 start: 'top 30%',
                 end: 'bottom 80%',
-                scrub: true
+                scrub: true,
             }
         })
         .from('#c-left-leaf', { x: -100, y: 100 })
